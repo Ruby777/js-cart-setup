@@ -30,21 +30,24 @@
                 let finalPrice = price.slice(1).trim();
 
                 const cartItem = document.createElement('div');
-                cartItem.classList('cart-item', 'd-flex',''
-                <!-- cart item -->
-          <div class="cart-item d-flex justify-content-between text-capitalize my-3">
-            <img src="img-cart/cake-2.jpeg" class="img-fluid rounded-circle" id="item-img" alt="">
-            <div class="item-text">
-
-              <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
-              <span>$</span>
-              <span id="cart-item-price" class="cart-item-price" class="mb-0">10.99</span>
-            </div>
-            <a href="#" id='cart-item-remove' class="cart-item-remove">
-              <i class="fas fa-trash"></i>
-            </a>
-          </div>
-          <!--end of  cart item --></div>);
+                cartItem.classList(
+                    'cart-item', 
+                    'd-flex',
+                    'justify-content-between',
+                    'text-capitalize',
+                    'my-3');
+                cartItem.innerHTML = `
+                 <img src=${item.img} class="img-fluid rounded-circle" id="item-img" alt="">
+                 <div class="item-text">
+                    <p id="cart-item-title" class="font-weight-bold mb-0">${item.name}</p>
+                    <span>$</span>
+                    <span id="cart-item-price" class="cart-item-price" class="mb-0">${item.price}</span>
+                 </div>
+                 <a href="#" id='cart-item-remove' class="cart-item-remove">
+                    <i class="fas fa-trash"></i>
+                 </a>
+                 </div> 
+                `;
 
                 console.log(name);
                 console.log(item);

@@ -160,6 +160,13 @@ body {
 .store {
   background: var(--mainGrey);
 }
+.store-item{
+  transition: all 0.3 linear;
+}
+
+.store-item:hover{
+  box-shadow: 0 10px 15px rgb(0,0,0)
+}
 .img-container {
   position: relative;
   overflow: hidden;
@@ -190,11 +197,13 @@ body {
 .store-item-value {
   color: --mainYellow;
 }
+
 /*end of  store items */
 .search-box {
   background: var(--mainPink);
   color: var(--mainBlack);
 }
+
 
 /* ligthbox */
 

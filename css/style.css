@@ -275,3 +275,17 @@ body {
 .service-text {
   word-spacing: 0.5rem;
 }
+
+.footer-title{
+  background: var(--mainBlack);
+}
+
+.footer-contact{
+  background: var(--mainGrey);
+}
+
+.footer-icon{
+  font-size: 1.5rem;
+  color: var(--mainWhite);
+  transition: all 0.4 ease-in-out;
+}

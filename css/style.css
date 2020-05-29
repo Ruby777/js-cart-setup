@@ -1,16 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Kaushan+Script");
 
 :root {
-  --mainPink: #ef7998;
+  --mainPink: #6efaec;
   --mainYellow: rgb(249, 228, 148);
   --mainWhite: #fff;
   --mainBlack: #000;
-  --yellowTrans: rgba(249, 228, 148, 0.5);
+  --darkTrans: rgba(0, 0, 0, 0.9);
+  --yellowTrans: rgba(249, 228, 148, 0.9);
+  --pinkTrans: rgba(239, 121, 152, 0.9);
+  --purple: rgb(135, 95, 154);
+  --purpleTrans:rgba(135, 95, 154, 0.9);
   --mainGrey: rgb(238, 238, 238);
 }
 
 body {
-  font-family: "Kaushan Script", cursive;
+  font-family: "Kaushan Script", cursive; 
   background: var(--mainWhite);
   color: var(--mainBlack);
 }
@@ -27,8 +31,13 @@ body {
   font-size: 1.5rem;
   transition: all 0.5s ease-in-out;
 }
+
 .nav-link:hover {
   color: var(--mainBlack);
+}
+.nav-email {
+  font-size: 0.9rem;
+  
 }
 /* end of nav links */
 /* info icons */
@@ -57,8 +66,8 @@ body {
 
 .max-height {
   min-height: calc(100vh - 76px);
-  background: linear-gradient(var(--yellowTrans), var(--yellowTrans)),
-    url("../img/headerBcg.jpeg") center/cover fixed no-repeat;
+  background: linear-gradient(var(--purpleTrans), var(--purpleTrans)),
+    url("../img/logotwo.jpeg") center/cover fixed no-repeat;
   position: relative;
 }
 .banner {
@@ -69,10 +78,14 @@ body {
   color: var(--mainPink);
   font-size: 4rem;
 }
+.highlight-text {
+  color: var(--mainPink);
+  font-size: 2rem;
+}
 .banner-link {
   font-size: 1.5rem;
-  color: var(--mainBlack);
-  border: 0.2rem solid var(--mainBlack);
+  color: var(--mainWhite);
+  border: 0.2rem solid var(--mainWhite);
 }
 .banner-link:hover {
   background: var(--mainBlack);
@@ -183,7 +196,7 @@ body {
   bottom: 0;
   right: 0;
   padding: 0.75rem;
-  background: var(--mainYellow);
+  background: var(--purpleTrans);
   border-top-left-radius: 1rem;
   transition: all 1s ease-in-out;
   transform: translate(100%, 100%);

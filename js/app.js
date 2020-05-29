@@ -49,6 +49,7 @@
                  </a>
                  </div> 
                 `;
+
                 //select cart
                 const cart = document.getElementById('cart');
                 const total = document.querySelector('.cart-total-container');
@@ -62,11 +63,12 @@
                 console.log(item);
                 console.log(price);
                 console.log(finalPrice);
-
-
             }
         });
     });
+
+    // remove items from cart
+
 
     //showTotals function
 

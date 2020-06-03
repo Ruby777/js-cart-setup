@@ -187,6 +187,8 @@ body {
 }
 .store-img {
   transition: all 1s ease-in-out;
+  max-height: 350px;
+  object-fit: cover;
 }
 .img-container:hover .store-img {
   transform: scale(1.2);
@@ -206,6 +208,9 @@ body {
 }
 .store-item-icon:hover {
   color: var(--mainWhite);
+}
+#store-item-name{
+  font-size: 1.5rem;
 }
 .store-item-value {
   color: --mainYellow;
